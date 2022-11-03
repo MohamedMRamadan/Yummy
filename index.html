@@ -1,0 +1,212 @@
+<html>
+  <head>
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="Ahmed Ali" />
+    <meta
+      name="keywords"
+      content="ahmed bahnasy profile , web developer , html , css , js ,"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section id="loadingScreen">
+      <div class="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <section id="sideBar">
+      <div
+        id="sideBaritems"
+        class="d-flex flex-column justify-content-between py-3"
+      >
+        <ul class="nav-list text-white">
+          <li class="item-1">Search</li>
+          <li class="item-2">Categories</li>
+          <li class="item-3">Area</li>
+          <li class="item-4">Ingredients</li>
+          <li class="item-5">Contact Us</li>
+        </ul>
+        <div class="social-items px-4 ms-2">
+          <a href="https://www.facebook.com"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.globe.com.ph/"><i class="fas fa-globe"></i></a>
+          <p class="mt-3 text-muted">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div id="sideBar-nav">
+        <div class="sideBarLogo w-75">
+          <img class="img-fluid" src="images/logo.png" alt="logo" />
+        </div>
+        <i id="sideBarButton" class="fa-solid fa-bars"></i>
+        <div class="social-icons d-flex flex-column">
+          <i class="fas fa-globe my-1"></i>
+          <i class="fas fa-share-alt my-1"></i>
+        </div>
+      </div>
+    </section>
+    <section
+      id="searchSection"
+      class="pb-0 w-100 invisible position-fixed bg-black"
+    >
+      <div class="container w-75">
+        <div class="row pt-5 pb-1 mx-auto">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="w-100 form-control"
+              id="searchName"
+              placeholder="Search By Name"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="w-100 form-control"
+              id="searchLetter"
+              placeholder="Search By first Letter"
+              maxlength="1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mealsList">
+      <div class="container w-75">
+        <div class="row g-3 py-5"></div>
+      </div>
+    </section>
+    <section id="contact-us" class="d-none">
+      <div class="container">
+        <div
+          class="text-center text-white w-75 mx-auto vh-100 d-flex justify-content-center align-items-center align-content-center flex-wrap"
+        >
+          <h2 class="mb-5">ContacUs...</h2>
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <div class="position-relative">
+                <input
+                  type="text"
+                  class="form-control w-100"
+                  placeholder="Enter You Name"
+                  id="userName"
+                />
+                <i
+                  id="icon-1"
+                  class="fa-solid fa-x position-absolute contact-icon d-none"
+                ></i>
+              </div>
+              <p id="x-p1" class="x-paragraph d-none">
+                Special Characters and Numbers not allowed
+              </p>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="position-relative">
+                <input
+                  type="email"
+                  class="form-control w-100"
+                  placeholder="Enter Email"
+                  id="userEmail"
+                />
+                <i
+                  id="icon-2"
+                  class="fa-solid fa-x position-absolute contact-icon d-none"
+                ></i>
+              </div>
+              <p id="x-p2" class="x-paragraph d-none">
+                Enter valid email. *Ex: xxx@yyy.zzz
+              </p>
+            </div>
+            <div class="col-md-12 col-lg-6 mt-3 position-relative">
+              <div class="position-relative">
+                <input
+                  type="tel"
+                  class="form-control w-100"
+                  placeholder="Enter Phone"
+                  id="userPhone"
+                />
+                <i
+                  id="icon-3"
+                  class="fa-solid fa-x position-absolute contact-icon d-none"
+                ></i>
+              </div>
+              <p id="x-p3" class="x-paragraph d-none">
+                Enter valid Phone Number
+              </p>
+            </div>
+            <div class="col-md-12 col-lg-6 mt-3">
+              <div class="position-relative">
+                <input
+                  type="text"
+                  class="form-control w-100"
+                  placeholder="Enter Age"
+                  id="userAge"
+                />
+                <i
+                  id="icon-4"
+                  class="fa-solid fa-x position-absolute contact-icon d-none"
+                ></i>
+              </div>
+              <p id="x-p4" class="x-paragraph d-none">Enter valid Age</p>
+            </div>
+            <div class="col-md-12 col-lg-6 mt-3">
+              <div class="position-relative">
+                <input
+                  type="password"
+                  class="form-control w-100"
+                  placeholder="Enter Password"
+                  id="firstPassword"
+                />
+                <i
+                  id="icon-5"
+                  class="fa-solid fa-x position-absolute contact-icon d-none"
+                ></i>
+              </div>
+              <p id="x-p5" class="x-paragraph d-none">
+                Enter valid password *Minimum eight characters, at least one
+                uppercase letter, one lowercase letter, and one number or
+                special character:*
+              </p>
+            </div>
+            <div class="col-md-12 col-lg-6 mt-3">
+              <div class="position-relative">
+                <input
+                  type="password"
+                  class="form-control w-100"
+                  placeholder="Enter Re Password"
+                  id="rePassword"
+                />
+                <i
+                  id="icon-6"
+                  class="fa-solid fa-x position-absolute contact-icon d-none"
+                ></i>
+              </div>
+              <p id="x-p6" class="x-paragraph d-none">Enter valid Repassword</p>
+            </div>
+          </div>
+          <button
+            id="contactBtn"
+            type="submit"
+            class="disabled btn btn-outline-danger mt-5"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
